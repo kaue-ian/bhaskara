@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formúlario Bhaskara</title>
+</head>
+
+<body>
+
+    <div class="page">
+        <form class="formLogin">
+            <h1>Fórmula de Bhaskara</h1>
+            <p>Calcule a fórmula de bhaskara informando os valores abaixo:</p>
+            <div class="areas">
+                <label for="a">Informe o valor do elemento A</label>
+                <input type="number" id="a" class="email" placeholder="Exemplo: 5">
+            </div>
+    
+            <div class="areas">
+                <label for="b" class="email">Informe o valor do elemento B</label>
+                <input type="number" id="b" placeholder="Exemplo: 5">
+            </div>
+    
+            <div class="areas">
+                <label for="c">Informe o valor do elemento C</label>
+                <input type="number" id="c" placeholder="Exemplo: 25">
+            </div>
+
+            <div class="result" style="margin-bottom: 4vh; display: flex; justify-content: center; align-items: baseline; gap: 2%;">
+                <label for="x1">x1</label>
+                <input disabled="disabled" name="x1" id="x1" />
+
+                <label for="x2">x2</label>
+                <input disabled="disabled" name="x2" id="x2" />
+
+              </div>
+              <input type="button" onclick="Calcular()" class="btn" value="Calcular">
+              <input type="button" onclick="Limpar()" class="btn" value="Limpar">
+        </form>
+    </div>
+
+</body>
+<script src="js.js"></script>
+</html>
